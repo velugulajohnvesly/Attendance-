@@ -1,0 +1,50 @@
+.attendance-page {
+  width: min(100% - 40px, 760px);
+  margin: 0 auto;
+  padding: 78px 0 42px;
+}
+.page-header { margin-bottom: 38px; }
+.eyebrow, .panel-footer { color: #8b8e89; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.eyebrow { display: flex; align-items: center; gap: 9px; }
+.live-dot, .status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.live-dot { background: #a2bd81; box-shadow: 0 0 0 3px #e8eee1; }
+.page-header h1 { margin: 16px 0 6px; color: #252922; font: 600 clamp(36px, 7vw, 54px)/1.05 Georgia, serif; letter-spacing: -.045em; }
+.page-header h1 span { color: #a2bd81; }
+.page-header > p, .panel-heading p { color: #858981; font-size: 14px; }
+.attendance-panel { overflow: hidden; border: 1px solid #e7e9e2; border-radius: 14px; background: #fff; box-shadow: 0 18px 50px #28311b0a; }
+.panel-heading { min-height: 90px; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #eceee8; }
+.panel-heading h2 { margin: 0 0 4px; color: #34382f; font-size: 16px; font-weight: 650; }
+.panel-heading p { margin: 0; font-size: 12px; }
+.panel-heading p span { padding: 0 4px; color: #b4b7af; }
+.attendance-summary { display: flex; align-items: baseline; gap: 8px; color: #81867b; font-size: 12px; }
+.attendance-summary strong { color: #78945a; font: 600 26px Georgia, serif; }
+.student-list { padding: 0 24px; }
+.student-card { min-height: 85px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid #eff0ec; }
+.student-card:last-child { border-bottom: 0; }
+.student-identity, .student-actions { display: flex; align-items: center; }
+.student-identity { gap: 15px; }
+.student-number { color: #a7aa9f; font: 13px Georgia, serif; }
+.student-identity h3 { margin: 0 0 4px; color: #31352e; font-size: 14px; font-weight: 600; }
+.student-identity p { margin: 0; color: #999d94; font-size: 11px; }
+.student-actions { gap: 20px; }
+.status-pill { min-width: 71px; display: inline-flex; align-items: center; gap: 7px; color: #868a81; font-size: 11px; }
+.status-present { color: #6e8b50; }
+.status-absent { color: #aa7770; }
+.status-present .status-dot { background: #96b572; }
+.status-absent .status-dot { background: #d4a19a; }
+.button-group { display: flex; gap: 6px; }
+.mark-button { border: 1px solid #e5e7e0; border-radius: 6px; padding: 7px 11px; background: #fff; color: #777c72; font: inherit; font-size: 11px; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.mark-button:hover { border-color: #bac9a8; }
+.present-button.selected { border-color: #dce8d1; background: #f0f5eb; color: #648247; }
+.absent-button.selected { border-color: #eee0de; background: #f8f0ef; color: #9f6e67; }
+.mark-button:focus-visible { outline: 2px solid #8da96d; outline-offset: 2px; }
+.panel-footer { padding: 14px 24px; border-top: 1px solid #eceee8; font-size: 9px; letter-spacing: .12em; }
+.page-note { margin-top: 22px; color: #a3a69e; text-align: center; font: italic 13px Georgia, serif; }
+@media (max-width: 560px) {
+  .attendance-page { width: min(100% - 28px, 760px); padding-top: 48px; }
+  .student-list { padding: 0 16px; }
+  .student-card { min-height: 100px; align-items: flex-start; justify-content: center; flex-direction: column; gap: 10px; padding: 14px 0; }
+  .student-actions { width: 100%; justify-content: space-between; padding-left: 30px; }
+  .panel-heading { padding: 18px 16px; }
+  .status-pill { min-width: 0; }
+}
